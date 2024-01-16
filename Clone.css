@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.main-container{
+    border: 1px solid white;
+    margin: 10px;
+    padding: 10px;
+    background: rgb(33,17,95);
+    background: linear-gradient(180deg, rgba(33,17,95,1) 15%, rgba(29,17,75,1) 40%, rgba(21,18,32,1) 65%, rgba(18,18,18,1) 90%);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.page{
+    margin-right: 12px;
+}
+.header-buttons{
+    display: flex;
+}
+.header-buttons p{
+    margin-left: 10px;
+}
+#premium{
+    background-color: white;
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 20px;
+}
+#install{
+    color: white;
+    background-color: #0f0829;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 20px;
+}
+#bell-icon{
+    background-color: #0f0829;
+    font-size: 23px;
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 50%;
+}
+.greetings h2{
+    color: white;
+    margin-top: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 8px;
+    letter-spacing: 0.1em;
+}
+.recently{
+    margin-top: 18px;
+}
+.row1,.row2,.row3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 8px;
+    gap: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+    .row1,.row2,.row3{
+        display: block;
+    }
+    .common{
+        margin-bottom: 20px;
+    }
+
+}
+
+
+.row1 > div{
+    border: 1px solid grey;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.row2 > div{
+    border: 1px solid grey;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.row3 > div{
+    border: 1px solid grey;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.common{
+    align-items: center;
+    display: flex;
+    background: rgb(50,41,83);
+    background: linear-gradient(90deg, rgba(50,41,83,1) 15%, rgba(47,42,64,1) 30%, rgba(51,42,84,1) 54%, rgba(47,42,63,1) 84%);
+}
+.common img{
+    height: 100%;
+    width: 80px;
+}
+.common .song-name{
+    margin-left: 12px;
+}
+
+.common .play-icon{
+    display: none;
+}
+
+.recently .common:hover{
+    background: rgb(48,39,80);
+    background: linear-gradient(90deg, rgba(48,39,80,1) 20%, rgba(88,88,90,1) 50%, rgba(50,42,85,1) 80%, rgba(48,42,73,1) 100%);
+}
+.common:hover > .play-icon{
+    display: inline;
+}
+
+
+
+
+/* COLUMN-1 PLAY BTN */
+.animal .play-icon{
+    position: relative;
+    top: 0%;
+    left: 45%;
+    font-size: 38px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #1ed760;
+}
+.aujla .play-icon{
+    position: relative;
+    top: 0%;
+    left: 55%;
+    font-size: 38px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #1ed760;
+}
+.young .play-icon{
+    position: relative;
+    top: 0%;
+    left: 38%;
+    font-size: 38px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #1ed760;
+}
+
+/* COLUMN 2 PLAY BTN */
+
+.raftaar .play-icon{
+    position: relative;
+    top: 0%;
+    left: 49%;
+    font-size: 38px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #1ed760;
+}
+
+.munawar .play-icon{
+    position: relative;
+    top: 0%;
+    left: 20%;
+    font-size: 38px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #1ed760;
+}
+
+.vilen .play-icon{
+    position: relative;
+    top: 0%;
+    left: 55%;
+    font-size: 38px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #1ed760;
+}
+
+/* COLUMN 3 PLAY BTN */
+
+.king .play-icon{
+    position: relative;
+    top: 0%;
+    left: 35%;
+    font-size: 38px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #1ed760;
+}
+.jokhay .play-icon{
+    position: relative;
+    top: 0%;
+    left: 19%;
+    font-size: 38px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #1ed760;
+}
+.seedhe .play-icon{
+    position: relative;
+    top: 0%;
+    left: 41%;
+    font-size: 38px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #1ed760;
+}
+
+
+
+
+
+
+.one{
+    grid-row: 1;
+    grid-column: 1;
+}
+.two{
+    grid-row: 1;
+    grid-column: 2;
+}
+.three{
+    grid-row: 1;
+    grid-column: 3;
+}
+
+
+
+.music-player{
+    display: block;
+    margin: 35px auto;
+    width: 350px;
+    height: 550px;
+    border-radius: 20px;
+    /* background: rgba(255, 255, 255, 0.08); */
+    box-shadow: 0 40px 100px rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    overflow: hidden;
+    color: white;
+}
+#nowPlaying{
+    display: block;
+    text-align: center;
+    margin-bottom: 9px;
+    font-size: 22px;
+}
+.music-name,.artist-name{
+    text-align: center;
+    text-transform: capitalize;
+}
+.music-name{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.artist-name{
+    font-size: 20px;
+}
+
+.disk{
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    width: 180px;
+    height: 180px;
+    background-color: #000;
+    background-image: url('animal.jpg');
+    background-size: cover;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
+}
+.song-slider{
+    width: 100%;
+    position: relative;
+}
+.seek-bar{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 10px;
+    height: 20px;
+    background: #000;
+    box-shadow: -400px 0 0 400px #1ed760;
+}
+.current-time,.song-duration{
+    font-size: 14px;
+}
+.song-duration{
+    position: absolute;
+    right: 0;
+}
+.controls{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.play-btn{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.play-btn span{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30px;
+    border-radius: 2px;
+    background: black;
+    transition: 0.5s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.play-btn span:nth-child(2){
+    left: 55%;
+    transform-origin: center;
+}
+.play-btn.pause span:nth-child(2){
+    transform: translateY(-50%) scaleY(0);
+}
+.play-btn.pause span:nth-child(1){
+    width: 35%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play-btn.pasue{
+    animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse {
+    0%{
+        box-shadow: 0;
+    }
+    50%{
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1);
+    }
+    100%{
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+    }
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.btn i{
+    font-size: 20px;
+}
